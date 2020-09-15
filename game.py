@@ -10,9 +10,9 @@ from kivy.uix.behaviors import ButtonBehavior
 
 class GameScreen(GridLayout):
     count = 1
-    Nought = "/Users/shakurduale/My_Python_Projects/Noughts_And_Crosses/Prototype_3/Nought.png"
-    Cross = "/Users/shakurduale/My_Python_Projects/Noughts_And_Crosses/Prototype_3/Cross.png"
-    Default = "/Users/shakurduale/My_Python_Projects/Noughts_And_Crosses/Prototype_3/Default.png"
+    Nought = "Nought.png"
+    Cross = "Cross.png"
+    Default = "Default.png"
     btn_dict = {}
     winner = ''
     win_dict = { '0': [], '1': []}
