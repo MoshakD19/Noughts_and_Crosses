@@ -1,0 +1,163 @@
+<Button>
+    font_size: 40
+
+<GameScreen>
+
+    GridLayout:
+        size: root.width - 200, root.height - 200
+        pos: 100, 100
+        cols: 1
+
+        GridLayout:
+            cols: 3
+
+            btn_1: btn_1
+            btn_2: btn_2
+            btn_3: btn_3
+            btn_4: btn_4
+            btn_5: btn_5
+            btn_6: btn_6
+            btn_7: btn_7
+            btn_8: btn_8
+            btn_9: btn_9
+
+            Button:
+                id: btn_1
+                text: '1'
+                background_down: root.DefaultImage() if btn_1.state == 'normal' else root.ChangeImage(btn_1)
+                on_release:
+                    root.Down(btn_1)
+                    root.Pressed(btn_1)
+                    root.Winning_Conditions()
+                multiline: False
+
+            Button:
+                id: btn_2
+                text: '2'
+                background_down: root.DefaultImage() if btn_2.state == 'normal' else root.ChangeImage(btn_2)
+                on_release:
+                    root.Down(btn_2)
+                    root.Pressed(btn_2)
+                    root.Winning_Conditions()
+                multiline: False
+
+            Button:
+                id: btn_3
+                text: '3'
+                background_down: root.DefaultImage() if btn_3.state == 'normal' else root.ChangeImage(btn_3)
+                on_release:
+                    root.Down(btn_3)
+                    root.Pressed(btn_3)
+                    root.Winning_Conditions()
+                multiline: False
+
+            Button:
+                id: btn_4
+                text: '4'
+                background_down: root.DefaultImage() if btn_4.state == 'normal' else root.ChangeImage(btn_4)
+                on_release:
+                    root.Down(btn_4)
+                    root.Pressed(btn_4)
+                    root.Winning_Conditions()
+                multiline: False
+
+            Button:
+                id: btn_5
+                text: '5'
+                background_down: root.DefaultImage() if btn_5.state == 'normal' else root.ChangeImage(btn_5)
+                on_release:
+                    root.Down(btn_5)
+                    root.Pressed(btn_5)
+                    root.Winning_Conditions()
+                multiline: False
+
+            Button:
+                id: btn_6
+                text: '6'
+                background_down: root.DefaultImage() if btn_6.state == 'normal' else root.ChangeImage(btn_6)
+                on_release:
+                    root.Down(btn_6)
+                    root.Pressed(btn_6)
+                    root.Winning_Conditions()
+                multiline: False
+
+            Button:
+                id: btn_7
+                text: '7'
+                background_down: root.DefaultImage() if btn_7.state == 'normal' else root.ChangeImage(btn_7)
+                on_release:
+                    root.Down(btn_7)
+                    root.Pressed(btn_7)
+                    root.Winning_Conditions()
+                multiline: False
+
+            Button:
+                id: btn_8
+                text: '8'
+                background_down: root.DefaultImage() if btn_8.state == 'normal' else root.ChangeImage(btn_8)
+                on_release:
+                    root.Down(btn_8)
+                    root.Pressed(btn_8)
+                    root.Winning_Conditions()
+                multiline: False
+
+            Button:
+                id: btn_9
+                text: '9'
+                background_down: root.DefaultImage() if btn_9.state == 'normal' else root.ChangeImage(btn_9)
+                on_release:
+                    root.Down(btn_9)
+                    root.Pressed(btn_9)
+                    root.Winning_Conditions()
+                multiline: False
+
+<P1>:
+    close: close
+
+    Label:
+        text: root.winner +  ' win.'
+        size_hint: 0.6, 0.2
+        pos_hint: {"x":0.2, "top":1}
+
+    Button:
+        id: close
+        font_size: 20
+        text: "Quit"
+        size_hint: 0.8, 0.2
+        pos_hint: {"x":0.1, "y":0.1}
+        on_release:
+            app.stop()
+
+<P2>:
+    close: close
+
+    Label:
+        text: root.winner +  ' win.'
+        size_hint: 0.6, 0.2
+        pos_hint: {"x":0.2, "top":1}
+
+    Button:
+        id: close
+        font_size: 20
+        text: "Quit"
+        size_hint: 0.8, 0.2
+        pos_hint: {"x":0.1, "y":0.1}
+        on_release:
+            app.stop()
+
+<P3>:
+    close: close
+
+    Label:
+        text: 'Draw'
+        size_hint: 0.6, 0.2
+        pos_hint: {"x":0.2, "top":1}
+
+    Button:
+        id: close
+        font_size: 20
+        text: "Quit"
+        size_hint: 0.8, 0.2
+        pos_hint: {"x":0.1, "y":0.1}
+        on_release:
+            app.stop()
